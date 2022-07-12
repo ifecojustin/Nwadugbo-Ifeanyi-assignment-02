@@ -61,7 +61,7 @@ function celsiusToFahrenheit(arrayOfNumbers) {
   let tempHolder=0; //This variable would contain the Farenheit value for each iteration
   for (let i = 0;i < arrayOfNumbers.length; i++) {
     tempHolder = (arrayOfNumbers[i]*(9/5))+32;//The celsius to Farenheit conversion
-    tempArray.push(Math.round(tempHolder));//Pushes a rounded value of the conversion
+    tempArray.push(Math.trunc(tempHolder));//Pushes a rounded value of the conversion
   }
     return tempArray;
 }
